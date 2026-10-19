@@ -2,7 +2,7 @@
 
 This is my Computer Science ePortfolio.
 
-I am completing my Bachelor of Science in Computer Science with a concentration in Software Engineering. This ePortfolio will showcase selected projects and enhancements that demonstrate my skills in software design and engineering, algorithms and data structures, databases, security, and professional communication.
+I am completing my Bachelor of Science in Computer Science with a concentration in Software Engineering. This ePortfolio showcases selected projects and enhancements that demonstrate my skills in software design and engineering, algorithms and data structures, databases, security, and professional communication.
 
 ## Portfolio Sections
 
@@ -30,13 +30,13 @@ My work in the Computer Science program and CS-499 has also helped me address th
 
 Overall, the Computer Science program has helped me become more confident in my ability to design, improve, and explain software. It has also helped me understand that being a software engineer requires more than knowing how to program. A software engineer needs to consider the people using the system, the data being handled, security, efficiency, maintainability, and communication with other people involved in the project. My goal after graduation is to continue building on these skills and growing in software engineering. The artifacts in this ePortfolio represent the progress I have made throughout the program and the areas I plan to continue developing throughout my career.
 
-[Download Professional Self-Assessment](LINK)
+[Download Professional Self-Assessment](documents/Professional_Self_Assessment.docx)
 
 ## Code Review
 
 This code review walks through the original version of my Inventory App and explains how the application is structured and how its main features work. I review the software design, algorithms and data handling, database structure, and security concerns, while also identifying weaknesses and explaining the improvements I planned to make for each enhancement category.
 
-[Watch Code Review](LINK)
+Code Review Link - To Be Added
 
 ## Software Design and Engineering
 
@@ -54,11 +54,11 @@ Working through this enhancement helped me understand how small design problems 
 
 There are still areas that I could continue improving in the future. Based on instructor feedback, some notification and database responsibilities could be moved into separate helper classes to make the code easier to maintain and test. For this enhancement, I focused on the validation, reliability, notification, and usability improvements that had the biggest effect on the current application.
 
-[Original Inventory App](LINK)
+[Original Inventory App](artifacts/Original_InventoryApp.zip)
 
-[Enhanced Inventory App](LINK)
+[Enhanced Inventory App](artifacts/Enhanced_InventoryApp.zip)
 
-[Download Software Design and Engineering Narrative](LINK)
+[Download Software Design and Engineering Narrative](documents/Software_Design_and_Engineering_Narrative.docx)
 
 ## Algorithms and Data Structures
 
@@ -74,11 +74,11 @@ Working through this enhancement helped me better understand why the way data is
 
 This enhancement also showed me some of the trade-offs involved in choosing a data structure and algorithm. An `ArrayList` requires additional memory because it temporarily stores inventory records as objects after retrieving them from the database. However, it provides a simple way to iterate over data and works well for this application's size and purpose. For a much larger inventory system, other approaches could improve searching or move more filtering and sorting into the database. For this application, the `ArrayList` and the selected algorithms provide a straightforward solution while demonstrating how data structures and algorithms can improve the usefulness of an existing program.
 
-[Original Inventory App](LINK)
+[Original Inventory App](artifacts/Original_InventoryApp.zip)
 
-[Enhanced Inventory App](LINK)
+[Enhanced Inventory App](artifacts/Enhanced_InventoryApp.zip)
 
-[Download Algorithms and Data Structures Narrative](LINK)
+[Download Algorithms and Data Structures Narrative](documents/Algorithms_and_Data_Structures_Narrative.docx)
 
 ## Databases
 
@@ -96,8 +96,8 @@ Another thing I considered during this enhancement was how the database could su
 
 Overall, this enhancement helped me better understand database upgrades, password security, how users and inventory records connect, and database performance. It also showed me how database changes can improve an application without requiring the entire program to be redesigned. I was able to improve the original database while preserving the features and data that were already part of the application.
 
-[Original Inventory App](LINK)
+[Original Inventory App](artifacts/Original_InventoryApp.zip)
 
-[Enhanced Inventory App](LINK)
+[Enhanced Inventory App](artifacts/Enhanced_InventoryApp.zip)
 
-[Download Databases Narrative](LINK)
+[Download Databases Narrative](documents/Databases_Narrative.docx)
