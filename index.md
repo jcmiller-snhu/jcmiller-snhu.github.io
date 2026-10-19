@@ -2,7 +2,7 @@
 
 This is my Computer Science ePortfolio.
 
-I am completing my Bachelor of Science in Computer Science with a concentration in Software Engineering. This ePortfolio showcases selected projects and enhancements that demonstrate my skills in software design and engineering, algorithms and data structures, databases, security, and professional communication.https://github.com/jcmiller-snhu/jcmiller-snhu.github.io/blob/main/index.md
+I am completing my Bachelor of Science in Computer Science with a concentration in Software Engineering. This ePortfolio showcases selected projects and enhancements that demonstrate my skills in software design and engineering, algorithms and data structures, databases, security, and professional communication.
 
 ## Portfolio Sections
 
