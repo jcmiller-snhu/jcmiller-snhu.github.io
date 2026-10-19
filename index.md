@@ -1,13 +1,103 @@
-## Computer Science ePortfolio
+# Computer Science ePortfolio
 
 This is my Computer Science ePortfolio.
 
 I am completing my Bachelor of Science in Computer Science with a concentration in Software Engineering. This ePortfolio will showcase selected projects and enhancements that demonstrate my skills in software design and engineering, algorithms and data structures, databases, security, and professional communication.
 
-## Portfolio Categories
+## Portfolio Sections
 
-- Software Design and Engineering
-- Algorithms and Data Structures
-- Databases
-- Code Review
-- Professional Self-Assessment
+- [Professional Self-Assessment](#professional-self-assessment)
+- [Code Review](#code-review)
+- [Software Design and Engineering](#software-design-and-engineering)
+- [Algorithms and Data Structures](#algorithms-and-data-structures)
+- [Databases](#databases)
+
+## Professional Self-Assessment
+
+Throughout the Computer Science program, I have developed a much broader understanding of what it means to work in software engineering. When I started the program, I mainly thought about programming as writing code and making an application work. Over time, I learned that software development also includes planning, testing, security, maintainability, communication, data management, and considering the needs of the people who will use the software. These areas have shaped my professional goals and helped prepare me to continue growing in software engineering after graduation. My concentration is software engineering, and the work in this program has helped me become more comfortable learning new technologies, solving problems, and improving existing software instead of only building something from the beginning.
+
+One area I have developed throughout the program is communication and collaboration. Discussion boards gave me opportunities to share ideas with classmates, respond to their work, and consider different perspectives. These discussions helped me practice explaining technical ideas clearly and giving useful feedback to other students. I also developed these skills through written assignments, project documentation, and the CS-499 code review, where I explained how my Inventory App worked, identified weaknesses, and described the improvements I planned to make. These experiences have helped me understand that collaboration can involve sharing information, considering feedback, and helping others understand the reasoning behind technical decisions. They also helped me learn how to explain technical information in a way that users, instructors, or other stakeholders can understand.
+
+I also developed stronger skills in data structures and algorithms. Throughout the program, I learned that solving a problem is not only about finding a solution that works, but also about considering how efficient and appropriate that solution is. In CS-499, I applied this by using an `ArrayList` to store inventory objects and adding searching, sorting, and filtering to the Inventory App. I considered the time complexity of these operations and the trade-offs involved in processing the inventory in memory. For the current size of the application, this approach works well, but I also learned that a larger system could benefit from handling more searching and sorting directly through the database. This helped me understand that design decisions should be based on the needs and scale of the application instead of automatically choosing the most complicated solution.
+
+Software engineering and database development have also been important parts of my growth. In addition to the Inventory App, I worked on other projects throughout the program involving web development, databases, and secure coding. For example, in CS-465 I worked on a full-stack web application using technologies such as Node.js, Express, and MongoDB, and in CS-405 I worked with secure coding practices and software vulnerabilities. These projects helped me understand how different parts of an application work together and how applications store, retrieve, and protect information. I also gained experience working with databases such as SQLite and MongoDB. These skills are important to my career because most software applications depend on reliable data and maintainable software design.
+
+Security has also changed the way I approach software development. Earlier in the program, I did not think about security as much as I do now. Through courses such as secure coding and through my CS-499 enhancements, I learned that security should be considered throughout the design and development process instead of being added after the application is finished. In the Inventory App, I improved input validation, replaced plaintext password storage with password hashing, improved authentication-related data handling, and changed the database upgrade process so existing data would not simply be deleted. These improvements reinforced the importance of protecting data, validating input, and thinking about how software could fail or be misused.
+
+The three enhancements in my ePortfolio fit together to show my growth in software engineering. The software design and engineering enhancement focused on reliability, validation, usability, and improving the overall structure of the application. The algorithms and data structures enhancement added searching, sorting, filtering, and consideration of efficiency and trade-offs. The database enhancement improved password security, database migration, inventory information, and user tracking. Together, these enhancements show how one application can be improved from several different areas instead of treating software design, algorithms, databases, and security as completely separate subjects.
+
+My work in the Computer Science program and CS-499 has also helped me address the five program outcomes. I demonstrated collaboration and decision-making skills through discussion boards, the code review, written narratives, and the shared inventory improvements in my application. I demonstrated professional communication through the code review, enhancement narratives, and ePortfolio. I demonstrated algorithmic problem solving through the searching, sorting, filtering, and efficiency analysis in the Inventory App. I demonstrated the use of software engineering tools and techniques through Java, Android Studio, SQLite, validation, testing, and database improvements. I also demonstrated a security mindset through input validation, password hashing, authentication improvements, and safer database handling.
+
+Overall, the Computer Science program has helped me become more confident in my ability to design, improve, and explain software. It has also helped me understand that being a software engineer requires more than knowing how to program. A software engineer needs to consider the people using the system, the data being handled, security, efficiency, maintainability, and communication with other people involved in the project. My goal after graduation is to continue building on these skills and growing in software engineering. The artifacts in this ePortfolio represent the progress I have made throughout the program and the areas I plan to continue developing throughout my career.
+
+[Download Professional Self-Assessment](LINK)
+
+## Code Review
+
+This code review walks through the original version of my Inventory App and explains how the application is structured and how its main features work. I review the software design, algorithms and data handling, database structure, and security concerns, while also identifying weaknesses and explaining the improvements I planned to make for each enhancement category.
+
+[Watch Code Review](LINK)
+
+## Software Design and Engineering
+
+The artifact that I selected for this enhancement is the Inventory App that I originally created in CS 360: Mobile Architecture and Programming. It is an Android application written in Java that allows users to create an account, log in, add inventory items, edit quantities, delete items, and configure SMS notifications. I selected this artifact because it already included several different parts of software development, including a user interface, application logic, database interaction, and notifications. This gave me several areas where I could improve the application without having to create a new project from the beginning.
+
+I included this artifact in my ePortfolio because it shows my ability to take an existing application and improve how it works. One of the biggest improvements I made was strengthening the validation and error handling in the add and edit item screen. The original application converted the quantity directly to an integer, which could cause problems if invalid information was entered. I added validation that checks the input before saving it, prevents negative quantities, and gives the user feedback when the information is not valid. I also changed the save process so that the application confirms the database operation was successful before sending an inventory notification.
+
+I also improved the low-stock notification system. The original application only sent an alert when an item's quantity reached exactly zero. I added a low-stock threshold that the user can configure in the notification settings. The threshold is saved using `SharedPreferences` and is used when inventory is added or updated. The inventory screen also identifies items that are at or below the threshold by displaying them as low stock. This makes the inventory information easier to understand and gives the user an earlier warning before an item is completely gone.
+
+Another improvement I made was the delete process. Originally, pressing the Delete button immediately removed the item. I added a confirmation dialog so the user has a chance to cancel before deleting an inventory record. The application now also checks whether the delete was successful and displays either a success or failure message. I added file headers to the main files I modified so that what each file does and why it was changed are clearer.
+
+In Module One, I planned for this enhancement to support Course Outcomes 2, 4, and 5. I believe the work I completed made progress toward each of these outcomes. Outcome 2 is demonstrated through clearer user-facing messages, comments, file documentation, and the way I have explained the enhancement. Outcome 4 is demonstrated through the use of Java, Android Studio, input validation, `SharedPreferences`, notification handling, and improved application behavior. Outcome 5 is demonstrated through defensive programming and validation that helps prevent invalid input and unexpected behavior. The algorithms and data structures enhancement and database enhancement address the remaining areas of the project.
+
+Working through this enhancement helped me understand how small design problems can affect the reliability and usability of an application. Some of the original code worked under normal conditions, but it did not handle invalid input or failed operations very well. One challenge was changing the order of the save and notification logic without breaking the existing behavior. I also had to make sure the low-stock threshold was saved correctly and used by more than one activity. The process gave me more experience modifying an existing application instead of building something completely new, which is useful because software development often involves improving and maintaining code that already exists.
+
+There are still areas that I could continue improving in the future. Based on instructor feedback, some notification and database responsibilities could be moved into separate helper classes to make the code easier to maintain and test. For this enhancement, I focused on the validation, reliability, notification, and usability improvements that had the biggest effect on the current application.
+
+[Original Inventory App](LINK)
+
+[Enhanced Inventory App](LINK)
+
+[Download Software Design and Engineering Narrative](LINK)
+
+## Algorithms and Data Structures
+
+The artifact that I selected for this enhancement is the Inventory App that I created in CS 360: Mobile Architecture and Programming. It is an Android application written in Java that allows users to create an account, log in, add inventory items, edit quantities, delete items, and configure inventory notifications. I selected this artifact again because the inventory system gave me a good opportunity to improve how data is organized and displayed while building on the software design improvements I completed in the previous milestone.
+
+For this enhancement, I focused on demonstrating my skills with algorithms and data structures. I created an `InventoryItem` class to represent each inventory record as an object and used an `ArrayList<InventoryItem>` to store the records after retrieving them from the SQLite database. This made it possible to perform searching, filtering, and sorting on the inventory data before displaying it to the user. Previously, the application read each database record directly from a cursor and immediately created a row in the inventory table. The enhanced version separates the data from the way it is displayed and allows the collection to be processed before the table is created.
+
+I also added several new features that use algorithms to make the inventory easier to manage. Users can search for an item by name, sort the inventory alphabetically by item name, sort it by quantity, and filter the list to show only low-stock items. The search and low-stock filtering operations examine the inventory items one at a time, giving them a time complexity of O(n), where n represents the number of items in the inventory. Sorting requires more comparisons between items, so the built-in Java sorting operation is approximately O(n log n). This means searching and filtering grow directly with the number of inventory items, while sorting requires somewhat more work but is still efficient as the list grows. `ArrayList` works well for this application because the program frequently needs to move through the entire collection for searching, filtering, and displaying inventory records.
+
+In Module One, I planned for this enhancement to support Course Outcomes 3 and 4. I believe the completed enhancement made progress toward both outcomes. Outcome 3 is demonstrated by using data structures and algorithms to search, filter, and sort inventory records while considering the efficiency of those operations. Outcome 4 is demonstrated through the use of Java, Android Studio, object-oriented programming, collections, and built-in sorting tools to add useful functionality to the application. The database enhancement addresses the remaining areas of the project.
+
+Working through this enhancement helped me better understand why the way data is organized can affect how easy it is to add new functionality to an application. The original inventory screen worked for displaying records, but processing each database row directly limited what I could do with the information before displaying it. Moving the records into an `ArrayList` made it easier to search, filter, and sort them using the same collection. One challenge was making sure the new features worked together, not just individually. For example, I needed the low-stock filter to continue working when the inventory was also sorted or searched. Testing different combinations helped me confirm the collection was processed in the correct order.
+
+This enhancement also showed me some of the trade-offs involved in choosing a data structure and algorithm. An `ArrayList` requires additional memory because it temporarily stores inventory records as objects after retrieving them from the database. However, it provides a simple way to iterate over data and works well for this application's size and purpose. For a much larger inventory system, other approaches could improve searching or move more filtering and sorting into the database. For this application, the `ArrayList` and the selected algorithms provide a straightforward solution while demonstrating how data structures and algorithms can improve the usefulness of an existing program.
+
+[Original Inventory App](LINK)
+
+[Enhanced Inventory App](LINK)
+
+[Download Algorithms and Data Structures Narrative](LINK)
+
+## Databases
+
+For my database enhancement, I continued working with the Inventory App that I created in CS 360: Mobile Architecture and Programming. The application was created as an Android inventory management app that allows users to create accounts, log in, and add, edit, or delete inventory items. The original application used SQLite to store user accounts and inventory data. I chose this artifact because it already had a working database, but there were several areas that could be improved, especially with security, database structure, and the relationship between users and inventory records.
+
+One of the biggest improvements I made was changing how passwords are stored. In the original application, passwords were stored directly in the database as plaintext. I added a `PasswordHelper` class that hashes passwords before they are stored and verifies the password hash during login. I also updated the database from version 1 to version 2. The original `onUpgrade()` method deleted the user and inventory tables, which meant stored information could be lost when the database was upgraded. I changed the upgrade process so the existing database can be updated without deleting the existing users or inventory records. Existing plaintext passwords are also converted to hashed passwords during the upgrade so existing accounts can still be used.
+
+I also expanded the inventory database to store more useful information. I added fields for an item category, low-stock threshold, and the user who last modified the inventory item. I also added an index for item names. The application still uses one shared inventory, but it now records which authenticated user last added or edited an item. The username is displayed with each inventory record so users can see who last made a change. I also added a category field to the add and edit item screen, and the low-stock threshold is now stored with the inventory record. Existing records were preserved during the database upgrade. Because older records were created before categories and user tracking existed, they display values such as Uncategorized and Unknown when that information was not originally available.
+
+The enhancement met the course outcomes I planned in Module One. For Course Outcome One, multiple authenticated users can work with the same shared inventory while also being able to identify who last modified an item. This can help users understand changes that were made when making inventory or restocking decisions. For Course Outcome Four, I improved the database structure and made it support more useful information for features such as low-stock tracking, searching, sorting, and filtering. I also added an index to the item name field as a database performance improvement. For Course Outcome Five, I improved the security of the application by replacing plaintext password storage with password hashing, improving the handling of authenticated users, and connecting inventory changes to the user who made them.
+
+The main challenge during this enhancement was making changes to the database without breaking the features I had already added during the earlier enhancements. I had to make sure existing users could still log in after their passwords were converted to hashed values and that existing inventory records were not deleted during the database upgrade. I tested the application using an existing account and a newly created account, and both were able to log in correctly. I also tested adding and editing inventory items with different users and confirmed that the application correctly showed the user who last modified the item. Search, sorting, low-stock filtering, and the other existing inventory features also continued to work after the database changes.
+
+Another thing I considered during this enhancement was how the database could support the searching and sorting features from my previous enhancement. The application currently loads the inventory records into an `ArrayList` and performs searching, filtering, and sorting in memory. This works well for the small amount of inventory data used by this application. If the application were being used with a much larger inventory, it would eventually make more sense to perform more of the filtering and sorting directly in the database using SQL instead of loading every inventory record into memory first. The item-name index I added could also be useful if more searching were handled by the database in the future. This helped me understand that a solution that works well for a small amount of data may not be the best option once the amount of data becomes much larger.
+
+Overall, this enhancement helped me better understand database upgrades, password security, how users and inventory records connect, and database performance. It also showed me how database changes can improve an application without requiring the entire program to be redesigned. I was able to improve the original database while preserving the features and data that were already part of the application.
+
+[Original Inventory App](LINK)
+
+[Enhanced Inventory App](LINK)
+
+[Download Databases Narrative](LINK)
