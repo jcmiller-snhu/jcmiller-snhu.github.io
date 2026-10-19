@@ -36,7 +36,7 @@ Overall, the Computer Science program has helped me become more confident in my 
 
 This code review walks through the original version of my Inventory App and explains how the application is structured and how its main features work. I review the software design, algorithms and data handling, database structure, and security concerns, while also identifying weaknesses and explaining the improvements I planned to make for each enhancement category.
 
-Code Review Link - To Be Added
+[Watch Code Review](https://youtu.be/MaFp-SnJchc)
 
 ## Software Design and Engineering
 
